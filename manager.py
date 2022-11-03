@@ -63,10 +63,6 @@ class FileManager:
         return Path.cwd().relative_to(self._root) #os.getcwd
 
     @property
-    def root_size(self):
-        return size_check.dir_size(self._root)
-
-    @property
     def invite(self):
         working_dir = str(
             self.working_dir).replace('\\', '/').replace('.', '/')
